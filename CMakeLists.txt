@@ -13,14 +13,16 @@ find_package(GTest REQUIRED)
 
 set(link_lib glog::glog GTest::gtest)
 set(link_math_lib  ${ARMADILLO_LIBRARIES} ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
-aux_source_directory(./test DIR_TEST_ARMA)
+aux_source_directory(./test TEST_DIR_FILES)
+aux_source_directory(./src SRC_DIR_FILES)
 
-add_executable(block_scholes_part1 part1/main.cpp ${DIR_TEST_ARMA})
+add_executable(block_scholes_part1 main.cpp ${TEST_DIR_FILES} ${SRC_DIR_FILES})
 target_link_libraries(block_scholes_part1 ${link_lib} ${link_math_lib} OpenMP::OpenMP_CXX)
 
 target_include_directories(block_scholes_part1 PUBLIC ${glog_INCLUDE_DIR})
 target_include_directories(block_scholes_part1 PUBLIC ${GTest_INCLUDE_DIR})
 target_include_directories(block_scholes_part1 PUBLIC ${Armadillo_INCLUDE_DIR})
+target_include_directories(block_scholes_part1 PUBLIC ./include)
 enable_testing()
 
 add_test(NAME run_block_scholes_part1 COMMAND block_scholes_part1)
