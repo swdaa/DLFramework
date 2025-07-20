@@ -1,10 +1,15 @@
 {
-  "clangd.path": "/usr/bin/clangd",
-  "clangd.arguments": [
-    "--background-index",
-    "--clang-tidy",
-    "--header-insertion=never",
-    "--completion-style=detailed"
-  ],
-  "C_Cpp.intelliSenseEngine": "Disabled" 
+    "clangd.path": "/usr/bin/clangd",
+    "clangd.arguments": [
+        "--background-index",
+        "--clang-tidy",
+        "--header-insertion=never",
+        "--completion-style=detailed"
+    ],
+    "editor.formatOnSave": true,
+    "clang-format.executable": "clang-format",
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "C_Cpp.intelliSenseEngine": "Disabled"
 }

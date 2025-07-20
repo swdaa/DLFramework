@@ -1,0 +1,21 @@
+# 使用YAML格式
+# 基於Google的代碼風格
+BasedOnStyle: Google
+
+# 在Google風格的基礎上，進行自定義修改
+# 縮進寬度改為4個空格
+IndentWidth: 4
+# Tab寬度也設置為4，儘管我們不用Tab
+TabWidth: 4
+# 始終不使用Tab，全部轉換為空格
+UseTab: Never
+
+# 最大列寬限制，放寬到120
+ColumnLimit: 120
+
+# 允許將簡短的函數放在同一行嗎？None表示不允許
+AllowShortFunctionsOnASingleLine: None
+# 繼承的類的大括號是否換行
+BreakBeforeBraces: Allman
+# 指針和引用符號的位置（左對齊、右對齊、中間）
+PointerAlignment: Left
