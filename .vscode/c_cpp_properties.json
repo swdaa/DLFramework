@@ -1,0 +1,35 @@
+// {
+//     "configurations": [
+//         {
+//             "name": "Linux",
+//             "includePath": [
+//                 "${workspaceFolder}/**"
+//             ],
+//             "defines": [],
+//             "compilerPath": "/usr/bin/gcc",
+//             "cStandard": "c17",
+//             "cppStandard": "gnu++17",
+//             "intelliSenseMode": "linux-gcc-x64"
+//         }
+//     ],
+//     "version": 4
+// }
+
+
+{
+    "configurations": [
+        {
+            "name": "Clang",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/c++/v1"  // libc++
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang++", 
+            "cppStandard": "c++20",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

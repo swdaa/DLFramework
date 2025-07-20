@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "configure",
+      "command": "cmake",
+      "args": [
+        "-S", ".",
+        "-B", "build",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "build",
+      "command": "cmake",
+      "args": ["--build", "build"],
+      "dependsOn": "configure",
+      "group": "build"
+    }
+  ]
+}

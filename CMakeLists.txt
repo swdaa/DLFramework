@@ -11,6 +11,10 @@ find_package(BLAS REQUIRED)
 find_package(LAPACK REQUIRED)
 find_package(GTest REQUIRED)
 
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    add_compile_options(-g -O0)
+endif()
+
 set(link_lib glog::glog GTest::gtest)
 set(link_math_lib  ${ARMADILLO_LIBRARIES} ${BLAS_LIBRARIES} ${LAPACK_LIBRARIES})
 aux_source_directory(./test TEST_DIR_FILES)
