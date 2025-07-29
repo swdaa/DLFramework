@@ -11,7 +11,7 @@
 #include "runtime/runtime_ir.hpp"
 #include "utils/time/time_logging.hpp"
 
-namespace block_scholes
+namespace black_scholes
 {
 RuntimeGraph::RuntimeGraph(std::string param_path, std::string bin_path)
     : param_path_(std::move(param_path)), bin_path_(std::move(bin_path))
@@ -614,4 +614,4 @@ bool RuntimeGraph::is_output_op(const std::string& op_name) const
     return false;
 }
 
-}  // namespace block_scholes
+}  // namespace black_scholes
