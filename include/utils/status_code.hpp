@@ -1,8 +1,8 @@
 
-
 #ifndef DL_INCLUDE_COMMON_HPP_
 #define DL_INCLUDE_COMMON_HPP_
-namespace black_scholes {
+namespace black_scholes
+{ 
 
 enum class RuntimeParameterType {
   kParameterUnknown = 0,
@@ -31,5 +31,5 @@ enum class StatusCode {
   kParseNullOperator = 8,
 };
 
-}
-#endif  
+}  // namespace kuiper_infer
+#endif
