@@ -5,7 +5,7 @@
 #include "deconvolution.hpp"
 #include "layer/abstract/layer.hpp"
 #include "status_code.hpp"
-namespace blackhole
+namespace block_scholes
 {
 BaseConvolutionLayer::BaseConvolutionLayer(ConvType conv_type, uint32_t output_channel, uint32_t in_channel,
                                            uint32_t kernel_h, uint32_t kernel_w, uint32_t padding_h, uint32_t padding_w,
@@ -533,4 +533,4 @@ StatusCode BaseConvolutionLayer::Check(const std::vector<sftensor>& inputs, cons
     return StatusCode::kSuccess;
 }
 
-}  // namespace blackhole
+}  // namespace block_scholes
