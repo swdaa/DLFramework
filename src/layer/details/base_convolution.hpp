@@ -3,7 +3,7 @@
 #ifndef KUIPER_INFER_SOURCE_LAYER_DETAILS_BASE_CONVOLUTION_H
 #define KUIPER_INFER_SOURCE_LAYER_DETAILS_BASE_CONVOLUTION_H
 #include "layer/abstract/param_layer.hpp"
-namespace blackhole
+namespace black_scholes
 {
 enum class ConvType
 {
@@ -62,5 +62,5 @@ class BaseConvolutionLayer : public ParamLayer
     ConvType conv_type_ = ConvType::kOpConvUnknown;
     std::vector<arma::fmat> kernel_matrix_arr_;
 };
-}  // namespace blackhole
+}  // namespace black_scholes
 #endif
