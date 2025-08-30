@@ -11,5 +11,8 @@
     "[cpp]": {
         "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
-    "C_Cpp.intelliSenseEngine": "Disabled"
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "files.associations": {
+        "cstdint": "cpp"
+    }
 }
