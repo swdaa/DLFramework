@@ -92,7 +92,6 @@ bool RuntimeGraph::Init()
                 // 初始化算子中的attribute(权重)
                 InitGraphAttrs(op->attrs, runtime_operator);
 
-                // 初始化算子中的parameter
                 InitGraphParams(op->params, runtime_operator);
                 this->operators_.push_back(runtime_operator);
             }
