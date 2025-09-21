@@ -1,6 +1,5 @@
 
 #include "runtime/runtime_op.hpp"
-
 #include "data/tensor_util.hpp"
 
 namespace block_scholes
