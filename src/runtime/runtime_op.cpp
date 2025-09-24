@@ -21,7 +21,7 @@ void RuntimeOperatorUtils<float>::InitOperatorInput(const std::vector<std::share
         else
         {
             const std::map<std::string, std::shared_ptr<RuntimeOperand>>& input_operands_map = op->input_operands;
-            // 初始化operator的输入空间
+            
             for (const auto& [_, input_operand] : input_operands_map)
             {
                 if (!input_operand)
