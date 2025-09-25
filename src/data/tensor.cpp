@@ -1,5 +1,4 @@
 
-
 #include "data/tensor.hpp"
 
 namespace block_scholes
