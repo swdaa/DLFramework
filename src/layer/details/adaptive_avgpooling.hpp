@@ -16,7 +16,6 @@ class AdaptiveAveragePoolingLayer : public NonParamLayer {
 
   static StatusCode CreateInstance(const std::shared_ptr<RuntimeOperator>& op,
                                    std::shared_ptr<Layer<float>>& avg_layer);
-
  private:
   uint32_t output_h_ = 0;
   uint32_t output_w_ = 0;
