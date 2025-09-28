@@ -5,7 +5,6 @@
 #include <memory>
 #include <utility>
 #include <vector>
-
 #include "layer/abstract/layer_factory.hpp"
 #include "runtime/runtime_ir.hpp"
 #include "utils/time/time_logging.hpp"
