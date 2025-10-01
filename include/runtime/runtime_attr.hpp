@@ -8,7 +8,6 @@
 #include "status_code.hpp"
 
 namespace black_scholes {
-
 /**
  * @brief Runtime operator attribute
  *
