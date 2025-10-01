@@ -6,7 +6,6 @@
 #include "utils/math/fmath.hpp"
 
 namespace black_scholes {
-
 bool ConvolutionLayer::Is1x1KernelNoPadding(uint32_t kernel_h, uint32_t kernel_w) const {
   if (stride_h_ == 1 && stride_w_ == 1 && dilation_h_ == 1 && dilation_w_ == 1 && kernel_w == 1 &&
       kernel_h == 1) {
