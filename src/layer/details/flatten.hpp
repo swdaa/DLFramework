@@ -3,7 +3,9 @@
 #ifndef KUIPER_INFER_SOURCE_LAYER_DETAILS_FLATTEN_HPP_
 #define KUIPER_INFER_SOURCE_LAYER_DETAILS_FLATTEN_HPP_
 #include "layer/abstract/non_param_layer.hpp"
+
 namespace block_scholes {
+
 class FlattenLayer : public NonParamLayer {
  public:
   explicit FlattenLayer(int32_t start_dim, int32_t end_dim);
