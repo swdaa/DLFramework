@@ -98,5 +98,4 @@ void ParamLayer::set_bias(const std::vector<float>& bias) {
     this->bias_.at(idx)->Fill(sub_values);
   }
 }
-
 }  // namespace kuiper_infer
