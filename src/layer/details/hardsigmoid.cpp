@@ -4,6 +4,7 @@
 #define KUIPER_INFER_SOURCE_LAYER_DETAILS_HARDSIGMOID_HPP_
 #include "activation.hpp"
 #include "layer/abstract/non_param_layer.hpp"
+
 namespace black_scholes {
 class HardSigmoid : public activation::ActivationLayer {
  public:
