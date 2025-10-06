@@ -42,7 +42,6 @@ class ConvolutionLayer : public BaseConvolutionLayer {
                                       uint32_t output_w, uint32_t group, uint32_t row_len,
                                       uint32_t col_len) const;
 };
-
 }  
 
 #endif 
