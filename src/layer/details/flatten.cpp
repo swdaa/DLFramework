@@ -5,6 +5,7 @@
 #include "layer/abstract/layer_factory.hpp"
 
 namespace black_scholes {
+
 FlattenLayer::FlattenLayer(int32_t start_dim, int32_t end_dim)
     : NonParamLayer("Flatten"), start_dim_(start_dim), end_dim_(end_dim) {}
 
