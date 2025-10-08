@@ -164,7 +164,6 @@ std::vector<std::shared_ptr<TokenNode>> ExpressionParser::Generate() {
   CHECK(root != nullptr);
   CHECK(index == tokens_.size() - 1);
 
-  // 转逆波兰式,之后转移到expression中
   std::vector<std::shared_ptr<TokenNode>> reverse_polish;
   ReversePolish(root, reverse_polish);
 
