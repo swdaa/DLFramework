@@ -37,7 +37,7 @@ StatusCode ExpressionLayer::Forward(const std::vector<std::shared_ptr<Tensor<flo
   std::stack<std::vector<std::shared_ptr<Tensor<float>>>> op_stack;
   for (auto iter = tokens.rbegin(); iter != tokens.rend(); ++iter) {
     const auto& current_token = *iter;
-    // 如果是数据类型，就将对应分支的input插入到栈中
+    
     if (current_token.token_type == TokenType::TokenInputNumber) {
       std::string str_number = *(token_str_array.rbegin() + std::distance(tokens.rbegin(), iter));
       str_number.erase(str_number.begin());
