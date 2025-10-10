@@ -4,6 +4,7 @@
 #define KUIPER_INFER_SOURCE_LAYER_DETAILS_DECONVOLUTION_H
 #include "base_convolution.hpp"
 #include "data/tensor.hpp"
+
 namespace black_scholes
 {
 class DeconvolutionLayer : public BaseConvolutionLayer
@@ -40,4 +41,5 @@ class DeconvolutionLayer : public BaseConvolutionLayer
                                         uint32_t kernel_count_group) const;
 };
 }  // namespace black_scholes
+
 #endif
