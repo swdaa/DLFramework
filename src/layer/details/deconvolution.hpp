@@ -2,6 +2,7 @@
 
 #ifndef KUIPER_INFER_SOURCE_LAYER_DETAILS_DECONVOLUTION_H
 #define KUIPER_INFER_SOURCE_LAYER_DETAILS_DECONVOLUTION_H
+
 #include "base_convolution.hpp"
 #include "data/tensor.hpp"
 
