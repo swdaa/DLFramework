@@ -120,6 +120,5 @@ StatusCode FlattenLayer::CreateInstance(const std::shared_ptr<RuntimeOperator>& 
   flatten_layer = std::make_shared<FlattenLayer>(start_dim->value, end_dim->value);
   return StatusCode::kSuccess;
 }
-
 LayerRegistererWrapper kFlattenCreateInstance(FlattenLayer::CreateInstance, "torch.flatten");
 }  // namespace kuiper_infer
