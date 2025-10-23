@@ -25,5 +25,4 @@ StatusCode HardSigmoid::CreateInstance(const std::shared_ptr<RuntimeOperator>& o
 }
 
 LayerRegistererWrapper kHardSigmoidCreateInstance(HardSigmoid::CreateInstance, "nn.Hardsigmoid");
-
 }
