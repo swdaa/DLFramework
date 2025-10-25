@@ -2853,5 +2853,4 @@ const Operand* Graph::get_operand(const std::string& name) const
 
     return 0;
 }
-
 }  // namespace pnnx
