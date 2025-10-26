@@ -1,5 +1,6 @@
 
 #include "layer/abstract/layer.hpp"
+
 namespace black_scholes {
 
 const std::vector<std::shared_ptr<Tensor<float>>>& Layer<float>::weights() const {
