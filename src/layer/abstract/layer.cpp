@@ -79,5 +79,4 @@ void Layer<float>::set_runtime_operator(const std::shared_ptr<RuntimeOperator>& 
   CHECK(runtime_operator != nullptr);
   this->runtime_operator_ = runtime_operator;
 }
-
 }  // namespace kuiper_infer
