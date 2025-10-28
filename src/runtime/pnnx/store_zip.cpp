@@ -534,7 +534,6 @@ int main()
 
         sz.close();
     }
-
     return 0;
 }
 #endif
