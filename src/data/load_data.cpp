@@ -10,7 +10,6 @@
 
 namespace block_scholes
 {
-
 std::pair<size_t, size_t> CSVDataLoader::GetMatrixSize(std::ifstream& file, char split_char)
 {
     bool load_ok = file.good();
