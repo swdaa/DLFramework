@@ -8,8 +8,8 @@ namespace black_scholes
 enum class ConvType
 {
     kOpConvUnknown = -1,
-    kOpConv = 0,    // 普通卷积
-    kOpDeconv = 1,  // 转置卷积
+    kOpConv = 0, 
+    kOpDeconv = 1, 
 };
 
 class BaseConvolutionLayer : public ParamLayer
