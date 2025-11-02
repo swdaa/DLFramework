@@ -5,6 +5,7 @@
 #include "layer/abstract/layer_factory.hpp"
 
 namespace black_scholes {
+
 ExpressionLayer::ExpressionLayer(std::string statement)
     : NonParamLayer("Expression"), statement_(std::move(statement)) {
   parser_ = std::make_unique<ExpressionParser>(statement_);
