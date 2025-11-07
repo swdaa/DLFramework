@@ -6,6 +6,7 @@
 #include "parser/parse_expression.hpp"
 
 namespace black_scholes {
+
 class ExpressionLayer : public NonParamLayer {
  public:
   explicit ExpressionLayer(std::string statement);
