@@ -3,6 +3,7 @@
 #ifndef DL_SOURCE_LAYER_AVGPOOLING_HPP_
 #define DL_SOURCE_LAYER_AVGPOOLING_HPP_
 #include "layer/abstract/non_param_layer.hpp"
+
 namespace block_scholes {
 class AdaptiveAveragePoolingLayer : public NonParamLayer {
  public:
