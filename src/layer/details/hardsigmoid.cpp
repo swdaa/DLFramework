@@ -18,5 +18,4 @@ class HardSigmoid : public activation::ActivationLayer {
                                    std::shared_ptr<Layer<float>>& hardsigmoid_layer);
 };
 } 
-
 #endif
