@@ -10,10 +10,8 @@ namespace black_scholes {
 class HardSigmoid : public activation::ActivationLayer {
  public:
   explicit HardSigmoid();
-
   StatusCode Forward(const std::vector<std::shared_ptr<Tensor<float>>>& inputs,
                      std::vector<std::shared_ptr<Tensor<float>>>& outputs) override;
-
   static StatusCode CreateInstance(const std::shared_ptr<RuntimeOperator>& op,
                                    std::shared_ptr<Layer<float>>& hardsigmoid_layer);
 };
