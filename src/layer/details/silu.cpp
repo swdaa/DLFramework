@@ -6,8 +6,8 @@
 #include "tick.hpp"
 
 namespace black_scholes {
-using namespace activation;
 
+using namespace activation;
 StatusCode SiLULayer::Forward(const std::vector<std::shared_ptr<Tensor<float>>>& inputs,
                               std::vector<std::shared_ptr<Tensor<float>>>& outputs) {
   using namespace activation;
