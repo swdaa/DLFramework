@@ -6,7 +6,6 @@
 #include "layer/abstract/non_param_layer.hpp"
 
 namespace black_scholes {
-
 class HardSigmoid : public activation::ActivationLayer {
  public:
   explicit HardSigmoid();
