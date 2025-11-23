@@ -127,7 +127,6 @@ StatusCode ExpressionLayer::CreateInstance(const std::shared_ptr<RuntimeOperator
   expression_layer = std::make_shared<ExpressionLayer>(statement_param->value);
   return StatusCode::kSuccess;
 }
-
 LayerRegistererWrapper kExpressionCreateInstance(ExpressionLayer::CreateInstance,
                                                  "pnnx.Expression");
 }  // namespace black_scholes
