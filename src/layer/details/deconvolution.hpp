@@ -22,7 +22,6 @@ class DeconvolutionLayer : public BaseConvolutionLayer
     }
 
     void set_weights(const std::vector<float>& weights) override;
-
     void set_weights(const std::vector<std::shared_ptr<Tensor<float>>>& weights) override;
 
    private:
