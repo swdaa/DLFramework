@@ -115,7 +115,6 @@ StatusCode FlattenLayer::CreateInstance(const std::shared_ptr<RuntimeOperator>& 
     LOG(ERROR) << "The start or end dimension parameter in the flatten layer is empty.";
     return StatusCode::kParseParamError;
   }
-
   flatten_layer = std::make_shared<FlattenLayer>(start_dim->value, end_dim->value);
   return StatusCode::kSuccess;
 }
