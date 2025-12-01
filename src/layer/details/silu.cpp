@@ -23,7 +23,6 @@ StatusCode SiLULayer::CreateInstance(const std::shared_ptr<RuntimeOperator>& op,
   silu_layer = std::make_shared<SiLULayer>();
   return StatusCode::kSuccess;
 }
-
 SiLULayer::SiLULayer() : ActivationLayer(ActivationType::kActivationSilu, "nn.SiLU") {}
 LayerRegistererWrapper kSiluCreateInstance(SiLULayer::CreateInstance, "nn.SiLU");
 }  // namespace kuiper_infer
