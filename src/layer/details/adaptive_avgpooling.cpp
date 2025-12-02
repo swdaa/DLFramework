@@ -162,5 +162,4 @@ StatusCode AdaptiveAveragePoolingLayer::Check(const std::vector<sftensor>& input
 
 LayerRegistererWrapper kAdaptiveAvgPoolingCreateInstance(AdaptiveAveragePoolingLayer::CreateInstance,
                                                          "nn.AdaptiveAvgPool2d", "F.adaptive_avg_pool2d");
-
 }  // namespace black_scholes
