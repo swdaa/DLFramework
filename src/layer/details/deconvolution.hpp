@@ -23,7 +23,6 @@ class DeconvolutionLayer : public BaseConvolutionLayer
 
     void set_weights(const std::vector<float>& weights) override;
     void set_weights(const std::vector<std::shared_ptr<Tensor<float>>>& weights) override;
-
    private:
     void ComputeOutput(sftensor input, sftensor output_tensor, uint32_t kernel_h, uint32_t kernel_w,
                        uint32_t kernel_count_group, uint32_t input_h, uint32_t input_w, uint32_t channels_per_group,
