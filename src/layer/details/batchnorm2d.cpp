@@ -6,7 +6,6 @@
 
 namespace block_scholes
 {
-
 StatusCode BatchNorm2dLayer::Forward(const std::vector<std::shared_ptr<Tensor<float>>>& inputs,
                                      std::vector<std::shared_ptr<Tensor<float>>>& outputs)
 {
