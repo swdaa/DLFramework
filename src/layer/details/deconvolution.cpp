@@ -5,7 +5,6 @@
 #include "layer/abstract/layer_factory.hpp"
 namespace black_scholes
 {
-
 void DeconvolutionLayer::set_weights(const std::vector<std::shared_ptr<Tensor<float>>>& weights)
 {
     LOG(FATAL) << "The set weights function does not support this convolution type: " << int32_t(conv_type_);
