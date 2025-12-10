@@ -376,7 +376,6 @@ StatusCode BaseConvolutionLayer::CreateInstance(const std::shared_ptr<RuntimeOpe
                                                           output_padding_h, output_padding_w, dilation_h, dilation_w);
     }
 
-    // load weights
     const std::map<std::string, std::shared_ptr<RuntimeAttribute>>& attrs = op->attribute;
     if (use_bias->value)
     {
