@@ -1,6 +1,5 @@
 
 #include "base_convolution.hpp"
-
 #include "convolution.hpp"
 #include "deconvolution.hpp"
 #include "layer/abstract/layer.hpp"
