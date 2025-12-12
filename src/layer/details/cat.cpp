@@ -1,6 +1,5 @@
 
 #include "cat.hpp"
-
 #include "layer/abstract/layer_factory.hpp"
 namespace black_scholes
 {
