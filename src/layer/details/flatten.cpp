@@ -68,7 +68,6 @@ StatusCode FlattenLayer::Forward(const std::vector<std::shared_ptr<Tensor<float>
                                               "not match "
                                            << i << " th";
     outputs.at(i) = output;
-
     if (start_dim == 1 && end_dim == 3) {
       output->Reshape({elements_size}, true);
     } else if (start_dim == 2 && end_dim == 3) {
