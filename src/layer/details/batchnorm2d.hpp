@@ -8,7 +8,6 @@
 
 namespace block_scholes
 {
-
 class BatchNorm2dLayer : public ParamLayer
 {
    public:
