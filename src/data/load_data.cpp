@@ -1,7 +1,6 @@
 
 #include "data/load_data.hpp"
 #include <glog/logging.h>
-
 #include <armadillo>
 #include <fstream>
 #include <string>
