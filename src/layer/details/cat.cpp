@@ -1,6 +1,7 @@
 
 #include "cat.hpp"
 #include "layer/abstract/layer_factory.hpp"
+
 namespace black_scholes
 {
 CatLayer::CatLayer(int32_t dim) : NonParamLayer("cat"), dim_(dim)
