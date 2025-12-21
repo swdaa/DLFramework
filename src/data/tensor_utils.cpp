@@ -3,5 +3,4 @@
 #include "data/tensor_util.hpp"
 
 namespace kuiper_infer
-{
-}
+{}
