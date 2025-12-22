@@ -7,7 +7,6 @@
 #include <utility>
 
 namespace block_scholes {
-
 void ReversePolish(const std::shared_ptr<TokenNode>& root_node,
                    std::vector<std::shared_ptr<TokenNode>>& reverse_polish) {
   if (root_node != nullptr) {
