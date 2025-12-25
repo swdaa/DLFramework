@@ -3,7 +3,6 @@
 
 namespace block_scholes
 {
-
 template <typename T>
 Tensor<T>::Tensor(T* raw_ptr, uint32_t size)
 {
