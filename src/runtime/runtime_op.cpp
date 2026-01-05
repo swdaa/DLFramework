@@ -11,7 +11,6 @@ void RuntimeOperatorUtils<float>::InitOperatorInput(const std::vector<std::share
         LOG(ERROR) << "Operators for init input shapes is empty!";
         return;
     }
-
     for (const auto& op : operators)
     {
         if (op->input_operands.empty())
