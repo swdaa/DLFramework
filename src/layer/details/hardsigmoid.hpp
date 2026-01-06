@@ -4,7 +4,6 @@
 #include "simd.hpp"
 
 namespace black_scholes {
-
 using namespace activation;
 HardSigmoid::HardSigmoid()
     : ActivationLayer(ActivationType::kActivationHardSigmoid, "HardSigmoid") {}
