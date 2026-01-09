@@ -17,7 +17,6 @@ class ExpressionLayer : public NonParamLayer {
 
   static StatusCode CreateInstance(const std::shared_ptr<RuntimeOperator>& op,
                                    std::shared_ptr<Layer<float>>& expression_layer);
-
  private:
   std::string statement_;
   std::unique_ptr<ExpressionParser> parser_;
