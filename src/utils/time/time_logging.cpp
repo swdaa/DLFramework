@@ -71,6 +71,4 @@ void LayerTimeLogging::SummaryLogging() {
     }
   }
   LOG(INFO) << "Total time: " << total_time_costs << "ms";
-}
-} 
-}  
+} } } 
