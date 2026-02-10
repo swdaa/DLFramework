@@ -121,13 +121,10 @@ void RuntimeGraph::Build()
     CHECK(graph_state_ >= GraphState::NeedBuild) << "Graph status error, current state is " << int32_t(graph_state_);
     LOG_IF(FATAL, this->operators_.empty()) << "Graph operators is empty, may be no init";
 
-    // 构建节点关系
     CreateNodeRelation();
 
-    // 节点拓扑排序
     ReverseTopoSort();
 
-    // 初始化节点的输入和输出空间
     RuntimeOperatorUtils<float>::InitOperatorInput(operators_);
     RuntimeOperatorUtils<float>::InitOperatorOutput(graph_->ops, operators_);
 
@@ -159,7 +156,6 @@ StatusCode ExecuteLayer(const std::shared_ptr<Layer<T>>& layer, const std::strin
 
 void RuntimeGraph::Forward(bool debug)
 {
-    // 检查当前的执行图是否已经初始化完毕
     if (graph_state_ < GraphState::Complete)
     {
         LOG(FATAL) << "Graph need be build!"
@@ -427,10 +423,8 @@ void RuntimeGraph::PropagateLayerOutputs(const std::shared_ptr<RuntimeOperatorBa
 
 void RuntimeGraph::ReverseTopoSort()
 {
-    // 构建拓扑顺序
     for (const auto& op : operators_)
     {
-        // 根据输入节点构建拓扑排序
         if (op != nullptr && !op->has_forward)
         {
             int32_t current_forward_idx = 0;
@@ -438,7 +432,6 @@ void RuntimeGraph::ReverseTopoSort()
         }
     }
 
-    // 根据拓扑顺序调整算子的执行顺序
     std::sort(operators_.begin(), operators_.end(),
               [](const auto& op1, const auto& op2) { return op1->start_time > op2->start_time; });
 
