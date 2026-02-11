@@ -19,7 +19,6 @@ StatusCode FlattenLayer::Forward(const std::vector<std::shared_ptr<Tensor<float>
     LOG(ERROR) << "The output tensor array in the flatten layer is empty";
     return StatusCode::kInferOutputsEmpty;
   }
-
   if (inputs.size() != outputs.size()) {
     LOG(ERROR) << "The input and output tensor array size of the flatten "
                   "layer do not match";
